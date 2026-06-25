@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import { Cairo } from "next/font/google";
-import "./globals.css";
+import "../globals.css";
 
 const cairo = Cairo({
   subsets: ["arabic"],
@@ -12,20 +12,19 @@ export const metadata: Metadata = {
   description: "منصة للنقد الأدبي والمقالات",
 };
 
-export default function RootLayout({
+export default function DashboardLayout({
   children,
-}: Readonly<{
+}: {
   children: React.ReactNode;
-}>) {
+}) {
   return (
-    <html
-      lang="ar"
-      dir="rtl"
-      className={`${cairo.variable} h-full antialiased`}
-    >
-      <body className="bg-(--color-bg-primary)">
-        <main className="container">{children}</main>
-      </body>
-    </html>
+    <div className="dashboard">
+      {/* <Sidebar /> */}
+
+      <div className="container">
+        {/* <Topbar /> */}
+        {children}
+      </div>
+    </div>
   );
 }

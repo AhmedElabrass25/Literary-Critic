@@ -1,26 +1,86 @@
 @import "tailwindcss";
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
+  /* Backgrounds */
+  --color-bg-primary: #f7f4ef;
+  --color-bg-secondary: #ede9e1;
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
+  /* Text */
+  --color-text-primary: #2c2a24;
+  --color-text-secondary: #5f5e5a;
+  --color-text-muted: #888780;
+  /* Borders */
+  --color-border: #d3cfc5;
+  --color-border-light: #e0ddd6;
+  /* Accent Colors */
+  --color-amber: #b68a3e;
+  --color-amber-light: #fac775;
+  --color-mint: #9fe1cb;
+  --color-coral: #f0997b;
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+  /* Status Colors */
+  --color-success: #0f6e56;
+  --color-success-bg: #e1f5ee;
+  --color-info: #185fa5;
+  --color-info-bg: #e6f1fb;
+  --color-purple: #3c3489;
+  --color-purple-bg: #eeedfe;
+  --color-warning: #854f0b;
+  --color-warning-bg: #faeeda;
+  --color-danger: #c94a4a;
+  --color-danger-bg: #faece7;
+  /* radius */
+  --radius-input: 8px;
+  --radius-button: 10px;
+  --radius-card: 12px;
+  /* shadow */
+  --shadow-sm: 0 1px 2px rgba(44, 42, 36, 0.04);
+  --shadow-md: 0 4px 12px rgba(44, 42, 36, 0.08);
+  --shadow-lg: 0 10px 25px rgba(44, 42, 36, 0.12);
+  /* typography */
+  --text-article-title: 36px;
+  --text-article-body: 20px;
+  --text-section-heading: 22px;
+  --text-ui-label: 13px;
+  --text-small-meta: 11px;
+}
+/* 
+
+   */
+@layer base {
+  h1 {
+    font-size: var(--text-article-title);
+    font-weight: 600;
+  }
+  p {
+    font-size: var(--text-article-body);
+    font-weight: 400;
+  }
+  h3 {
+    font-size: var(--text-section-heading);
+    font-weight: 600;
+  }
+  label {
+    font-size: var(--text-ui-label);
+    font-weight: 600;
+  }
+  small {
+    font-size: var(--text-small-meta);
+    font-weight: 400;
   }
 }
 
-body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+@layer components {
+  .btn-primary {
+    background-color: var(--color-warning);
+    color: white;
+    padding: 8px 10px;
+    border-radius: var(--radius-button);
+  }
+  .container {
+    width: 100%;
+    max-width: 1280px;
+    margin-inline: auto;
+    padding-inline: 1.5rem;
+  }
 }
