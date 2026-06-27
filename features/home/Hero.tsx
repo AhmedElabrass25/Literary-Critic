@@ -1,10 +1,8 @@
 "use client";
 import Image from "next/image";
 import Link from "next/link";
-import React from "react";
 import { BsArrowLeft } from "react-icons/bs";
 import { motion, Variants } from "framer-motion";
-
 const Hero = () => {
   const textVariants: Variants = {
     hidden: {
@@ -95,5 +93,4 @@ const Hero = () => {
     </motion.section>
   );
 };
-
 export default Hero;
