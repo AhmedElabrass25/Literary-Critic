@@ -1,9 +1,5 @@
-import React from "react";
+import { redirect } from "next/navigation";
 
-const page = () => {
-  return (
-    <div className="bg-blue-500 w-100 rounded-(--radius-button)">page</div>
-  );
-};
-
-export default page;
+export default function Home() {
+  redirect("/login");
+}
