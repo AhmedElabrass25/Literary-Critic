@@ -3,7 +3,8 @@ import { Cairo } from "next/font/google";
 import "./globals.css";
 
 const cairo = Cairo({
-  subsets: ["arabic"],
+  subsets: ["arabic", "latin"],
+  weight: ["400", "500", "600", "700"],
   variable: "--font-cairo",
 });
 
@@ -18,13 +19,9 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html
-      lang="ar"
-      dir="rtl"
-      className={`${cairo.variable} h-full antialiased`}
-    >
+    <html lang="ar" dir="rtl" className={`${cairo.variable} h-full`}>
       <body className="bg-(--color-bg-primary)">
-        <main className="container">{children}</main>
+        <main>{children}</main>
       </body>
     </html>
   );
