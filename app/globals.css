@@ -44,10 +44,11 @@
   --text-ui-label: 13px;
   --text-small-meta: 11px;
 }
-/* 
 
-   */
 @layer base {
+  body {
+    font-family: var(--font-cairo), sans-serif;
+  }
   h1 {
     font-size: var(--text-article-title);
     font-weight: 600;

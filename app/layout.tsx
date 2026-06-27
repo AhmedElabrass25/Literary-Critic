@@ -1,9 +1,12 @@
 import type { Metadata } from "next";
 import { Cairo } from "next/font/google";
 import "./globals.css";
+import Navbar from "@/components/navbar/Navbar";
+import Footer from "@/components/footer/Footer";
 
 const cairo = Cairo({
-  subsets: ["arabic"],
+  subsets: ["arabic", "latin"],
+  weight: ["400", "500", "600", "700"],
   variable: "--font-cairo",
 });
 
@@ -18,13 +21,11 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html
-      lang="ar"
-      dir="rtl"
-      className={`${cairo.variable} h-full antialiased`}
-    >
+    <html lang="ar" dir="rtl" className={`${cairo.variable} h-full`}>
       <body className="bg-(--color-bg-primary)">
+        <Navbar />
         <main className="container">{children}</main>
+        <Footer />
       </body>
     </html>
   );
