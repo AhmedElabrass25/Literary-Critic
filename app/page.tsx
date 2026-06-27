@@ -1,9 +1,8 @@
-import React from "react";
-
+import Hero from "@/features/home/Hero";
 const page = () => {
   return (
-    <div className="bg-blue-500 w-100 rounded-(--radius-button)">
-      {/* <Hero /> */}
+    <div>
+      <Hero />
     </div>
   );
 };

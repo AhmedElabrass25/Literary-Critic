@@ -3,21 +3,15 @@
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { IoIosSearch } from "react-icons/io";
+import { navLinks } from "./navLinks";
+import MobileNavbar from "./MobileNavbar";
 
 export default function Navbar() {
   const pathname = usePathname();
-
-  const navLinks = [
-    { name: "الرئيسية", href: "/" },
-    { name: "المقالات", href: "/articles" },
-    { name: "اسألني", href: "/ask-me" },
-    { name: "عن الناقد", href: "/about" },
-  ];
-
   return (
     <nav className="w-full py-4 border-b border-(--color-border)">
       <div className="container">
-        <div className="flex items-center justify-between">
+        <div className="hidden lg:flex items-center justify-between">
           <Link
             href="/"
             className="text-3xl font-bold text-(--color-text-primary)"
@@ -61,6 +55,7 @@ export default function Navbar() {
           </div>
         </div>
       </div>
+      <MobileNavbar />
     </nav>
   );
 }
