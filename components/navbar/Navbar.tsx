@@ -9,7 +9,7 @@ import MobileNavbar from "./MobileNavbar";
 export default function Navbar() {
   const pathname = usePathname();
   return (
-    <nav className="w-full py-4 border-b border-(--color-border)">
+    <nav className="w-full bg-(--color-bg-primary) fixed top-0 left-0 py-4 border-b border-(--color-border) z-50 ">
       <div className="container">
         <div className="hidden lg:flex items-center justify-between">
           <Link
