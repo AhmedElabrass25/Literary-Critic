@@ -55,11 +55,11 @@ const Page = () => {
             </Field>
 
             <Field>
-              <div className="flex items-center justify-between gap-4 pr-[0px] w-full max-w-[318px] h-[19.5px]">
+              <div className="flex items-center justify-between w-full max-w-[318px] h-[19.5px]">
                 <FieldLabel htmlFor="form-password">كلمة المرور</FieldLabel>
                 <Link
                   href="/"
-                  className="cursor-pointer hover:text-foreground text-[11px] leading-[15.4px] text-(--color-amber) -top-[1px] relative"
+                  className="hover:text-foreground text-[11px] leading-[15.4px] text-(--color-amber) -top-[1px] relative w-full max-w-[84px]"
                 >
                   نسيت كلمة المرور؟
                 </Link>
