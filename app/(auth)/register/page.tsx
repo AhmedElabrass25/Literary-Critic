@@ -14,7 +14,7 @@ const Page = () => {
   const [showPassword, setShowPassword] = useState(false);
   const [showConfirmPassword, setShowConfirmPassword] = useState(false);
   return (
-    <div className="flex items-center justify-center bg-[#FCF9F3] py-[20px]">
+    <div className="flex items-center justify-center bg-[#FCF9F3] py-[20px] min-h-screen">
       <div className="flex w-full max-w-[420px] flex-col justify-center gap-[20px] rounded-[12px] border border-[#CBC6BC] bg-white text-center shadow-[0px_1px_2px_0px_#0000000D] px-[48px] py-[18px] lg:py-[38px]">
         <div className="flex flex-col items-center gap-[4px] w-full max-w-[322px] h-[98px]">
           <svg
