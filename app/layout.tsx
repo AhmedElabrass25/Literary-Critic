@@ -30,9 +30,9 @@ export default function RootLayout({
       className={cn("h-full", cairo.variable, "font-sans", geist.variable)}
     >
       <body className="bg-(--color-bg-primary)">
-        <Navbar />
+        {/* <Navbar /> */}
         <main className="container">{children}</main>
-        <Footer />
+        {/* <Footer /> */}
       </body>
     </html>
   );
