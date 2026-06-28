@@ -16,7 +16,7 @@ const Page = () => {
   const [showPassword, setShowPassword] = useState(false);
   return (
     <div className="grid h-screen grid-cols-1 lg:grid-cols-2">
-      <div className="flex items-center justify-center py-[20px]">
+      <div className="flex items-center justify-center min-h-screen">
         <div className="flex w-full max-w-[420px] flex-col justify-center gap-[7px] rounded-[12px] border border-[#CBC6BC] bg-white text-center shadow-[0px_1px_2px_0px_#0000000D] px-[48px] py-[18px] lg:py-[38px]">
           <AuthTitle text="أهلاً بعودتك" />
 
