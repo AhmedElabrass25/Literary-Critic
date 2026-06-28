@@ -1,6 +1,8 @@
 import type { Metadata } from "next";
 import { Cairo } from "next/font/google";
 import "./globals.css";
+import Navbar from "@/components/navbar/Navbar";
+import Footer from "@/components/footer/Footer";
 
 const cairo = Cairo({
   subsets: ["arabic", "latin"],
@@ -21,7 +23,9 @@ export default function RootLayout({
   return (
     <html lang="ar" dir="rtl" className={`${cairo.variable} h-full`}>
       <body className="bg-(--color-bg-primary)">
-        <main>{children}</main>
+        <Navbar />
+        <main className="container">{children}</main>
+        <Footer />
       </body>
     </html>
   );
