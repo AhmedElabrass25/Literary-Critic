@@ -1,5 +1,12 @@
-import { redirect } from "next/navigation";
+import Articles from "@/features/home/articles/Articles";
+import Hero from "@/features/home/Hero";
+const page = () => {
+  return (
+    <div>
+      <Hero />
+      <Articles />
+    </div>
+  );
+};
 
-export default function Home() {
-  redirect("/login");
-}
+export default page;
