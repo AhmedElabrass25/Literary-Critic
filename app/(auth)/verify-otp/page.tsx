@@ -23,11 +23,11 @@ export default function page() {
               <FieldLabel htmlFor="input-otp-rtl">
                 ادخل رمز التحقق الذي ارسناه إلي example@email.com
               </FieldLabel>
+
               <InputOTP
                 id="input-otp-rtl"
                 maxLength={6}
                 pattern={REGEXP_ONLY_DIGITS}
-                dir="rtl"
               >
                 <InputOTPGroup className="flex-row-reverse *:data-[slot=input-otp-slot]:h-12 *:data-[slot=input-otp-slot]:w-11 *:data-[slot=input-otp-slot]:text-xl mt-2">
                   <InputOTPSlot index={0} />
@@ -39,6 +39,7 @@ export default function page() {
                 </InputOTPGroup>
               </InputOTP>
             </Field>
+
             <Field orientation="horizontal" className="justify-center">
               <Link href="/reset-password" className="w-full">
                 <AmberButton text="تأكيد الرمز" />
