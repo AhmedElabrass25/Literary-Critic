@@ -52,4 +52,14 @@ export const articlesData: Article[] = [
     publishedAt: "١٠ يونيو ٢٠٢٦",
     slug: "mahmoud-darwish",
   },
+  {
+    id: 6,
+    title: "الرمزية في شعر محمود درويش",
+    excerpt: "كيف استطاع درويش بناء صور شعرية خالدة عبر الرموز.",
+    image: "/images/heroImage.svg",
+    category: "الشعر",
+    author: "إيمان يوسف",
+    publishedAt: "١٠ يونيو ٢٠٢٦",
+    slug: "mahmoud-darwish",
+  },
 ];

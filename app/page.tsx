@@ -1,4 +1,4 @@
-import Articles from "@/features/home/Articles";
+import Articles from "@/features/home/articles/Articles";
 import Hero from "@/features/home/Hero";
 const page = () => {
   return (

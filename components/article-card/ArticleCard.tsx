@@ -10,7 +10,7 @@ interface Props {
 
 export default function ArticleCard({ article }: Props) {
   return (
-    <article className="flex h-full flex-col overflow-hidden rounded-(--radius-card) border border-(--color-border) bg-white shadow-sm">
+    <article className="w-full flex h-full flex-col overflow-hidden rounded-(--radius-card) border border-(--color-border) bg-white shadow-sm">
       {/* Article Image */}
       <div className="relative h-64 w-full">
         <Image
