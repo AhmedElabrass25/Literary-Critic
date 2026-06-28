@@ -1,8 +1,6 @@
 import type { Metadata } from "next";
 import { Cairo, Geist } from "next/font/google";
 import "./globals.css";
-import Navbar from "@/components/navbar/Navbar";
-import Footer from "@/components/footer/Footer";
 import { cn } from "@/lib/utils";
 
 const geist = Geist({ subsets: ["latin"], variable: "--font-sans" });
@@ -30,9 +28,9 @@ export default function RootLayout({
       className={cn("h-full", cairo.variable, "font-sans", geist.variable)}
     >
       <body className="bg-(--color-bg-primary)">
-        <Navbar />
+        {/* <Navbar /> */}
         <main className="container">{children}</main>
-        <Footer />
+        {/* <Footer /> */}
       </body>
     </html>
   );
