@@ -1,12 +1,6 @@
 "use client";
 
-import {
-  Field,
-  FieldGroup,
-  FieldLabel,
-  FieldDescription,
-} from "@/components/ui/field";
-import { Input } from "@/components/ui/input";
+import { Field, FieldGroup, FieldLabel } from "@/components/ui/field";
 import Link from "next/link";
 import { REGEXP_ONLY_DIGITS } from "input-otp";
 
@@ -15,8 +9,6 @@ import {
   InputOTPGroup,
   InputOTPSlot,
 } from "@/components/ui/input-otp";
-
-import { useState } from "react";
 import AmberButton from "@/components/ui/AmberButton";
 
 export default function page() {
@@ -49,12 +41,14 @@ export default function page() {
             </p>
           </div>
         </div>
-        <form className="flex w-full max-w-[322px]">
+        <form className="flex w-full max-w-[322px] flex-col">
           <FieldGroup>
             <Field className="w-full">
-              <FieldLabel htmlFor="input-otp-rtl">ادخل رمز التحقق الذي ارسناه إلي example@email.com</FieldLabel>
+              <FieldLabel htmlFor="input-otp-rtl">
+                ادخل رمز التحقق الذي ارسناه إلي example@email.com
+              </FieldLabel>
               <InputOTP
-               id="input-otp-rtl"
+                id="input-otp-rtl"
                 maxLength={6}
                 pattern={REGEXP_ONLY_DIGITS}
                 dir="rtl"
@@ -70,7 +64,9 @@ export default function page() {
               </InputOTP>
             </Field>
             <Field orientation="horizontal" className="justify-center">
-              <AmberButton text="تأكيد الرمز" />
+              <Link href="/reset-password" className="w-full">
+                <AmberButton text="تأكيد الرمز" />
+              </Link>
             </Field>
           </FieldGroup>
         </form>
