@@ -4,7 +4,7 @@ import { FaInstagram, FaFacebookF, FaShareAlt } from "react-icons/fa";
 import { footerLinks } from "./footer";
 const Footer = () => {
   return (
-    <footer className="border-t border-(--color-border) mt-24">
+    <footer className="relative bg-(--color-bg-secondary) border-t border-(--color-border) mt-24 z-50">
       <div className="container py-16">
         <div className="flex flex-col gap-14 lg:flex-row lg:justify-between">
           {/* Logo of website */}
