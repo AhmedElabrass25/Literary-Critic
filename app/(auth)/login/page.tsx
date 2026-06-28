@@ -9,19 +9,10 @@ import { Separator } from "@/components/ui/separator";
 import { useState } from "react";
 import AmberButton from "@/components/ui/AmberButton";
 import WhiteButton from "@/components/ui/WhiteButton";
-<<<<<<< HEAD
-import AuthTitle from "@/components/ui/AuthTitle";
-=======
->>>>>>> c1f19690394a0007062b3e172c19a18bcce842fa
 
 const Page = () => {
   const [showPassword, setShowPassword] = useState(false);
   return (
-<<<<<<< HEAD
-    <div className="flex items-center justify-center min-h-screen">
-      <div className="flex w-full max-w-[420px] flex-col justify-center gap-[7px] rounded-[12px] border border-[#CBC6BC] bg-white text-center shadow-[0px_1px_2px_0px_#0000000D] px-[48px] py-[18px] lg:py-[38px]">
-        <AuthTitle text="أهلاً بعودتك" />
-=======
     <div className="flex items-center justify-center py-[20px]">
       <div className="flex w-full max-w-[420px] flex-col justify-center gap-[7px] rounded-[12px] border border-[#CBC6BC] bg-white text-center shadow-[0px_1px_2px_0px_#0000000D] px-[48px] py-[18px] lg:py-[38px]">
         <div className="flex flex-col items-center gap-[4px] w-full max-w-[322px] h-[98px]">
@@ -50,7 +41,6 @@ const Page = () => {
             </p>
           </div>
         </div>
->>>>>>> c1f19690394a0007062b3e172c19a18bcce842fa
 
         <form className="flex w-full max-w-[322px] h-[443px] flex-col justify-center gap-[24px]">
           <FieldGroup>
@@ -65,19 +55,11 @@ const Page = () => {
             </Field>
 
             <Field>
-<<<<<<< HEAD
-              <div className="flex items-baseline justify-between w-full max-w-[318px] h-[19.5px]">
-                <FieldLabel htmlFor="form-password">كلمة المرور</FieldLabel>
-                <Link
-                  href="/forget-password"
-                  className="hover:text-foreground text-[11px] leading-[15.4px] text-(--color-amber) relative w-full max-w-[84px]"
-=======
               <div className="flex items-center justify-between gap-4 pr-[0px] w-full max-w-[318px] h-[19.5px]">
                 <FieldLabel htmlFor="form-password">كلمة المرور</FieldLabel>
                 <Link
                   href="/"
                   className="cursor-pointer hover:text-foreground text-[11px] leading-[15.4px] text-(--color-amber) -top-[1px] relative"
->>>>>>> c1f19690394a0007062b3e172c19a18bcce842fa
                 >
                   نسيت كلمة المرور؟
                 </Link>
@@ -178,8 +160,4 @@ const Page = () => {
   );
 };
 
-<<<<<<< HEAD
 export default Page;
-=======
-export default Page;
->>>>>>> c1f19690394a0007062b3e172c19a18bcce842fa
