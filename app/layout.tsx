@@ -1,10 +1,7 @@
 import type { Metadata } from "next";
-import { Cairo, Geist } from "next/font/google";
+import { Cairo } from "next/font/google";
 import "./globals.css";
 import { cn } from "@/lib/utils";
-
-const geist = Geist({ subsets: ["latin"], variable: "--font-sans" });
-
 const cairo = Cairo({
   subsets: ["arabic", "latin"],
   weight: ["400", "500", "600", "700"],
@@ -25,13 +22,9 @@ export default function RootLayout({
     <html
       lang="ar"
       dir="rtl"
-      className={cn("h-full", cairo.variable, "font-sans", geist.variable)}
+      className={cn("h-full", cairo.variable, "font-sans")}
     >
-      <body className="bg-(--color-bg-primary)">
-        {/* <Navbar /> */}
-        <main className="container">{children}</main>
-        {/* <Footer /> */}
-      </body>
+      <body className="bg-(--color-bg-primary)">{children} </body>
     </html>
   );
 }

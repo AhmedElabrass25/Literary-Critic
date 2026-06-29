@@ -8,14 +8,14 @@ import {
   CarouselNext,
   CarouselPrevious,
 } from "@/components/ui/carousel";
-const LatestArticles = () => {
+
+const MoastRatedArticles = () => {
   return (
     <>
       <div className="mb-12 bg-(--color-bg-secondary)">
         <div className="container py-20">
           <SectionHeader
-            title="أحدث المقالات"
-            description="استكشف أحدث المقالات والقراءات المختارة"
+            title="الأكثر تقييما "
             buttonText="عرض المزيد"
             buttonHref="/articles"
           />
@@ -46,4 +46,4 @@ const LatestArticles = () => {
   );
 };
 
-export default LatestArticles;
+export default MoastRatedArticles;

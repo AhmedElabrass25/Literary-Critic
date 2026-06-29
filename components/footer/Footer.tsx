@@ -1,7 +1,7 @@
 "use client";
 import Link from "next/link";
 import { FaInstagram, FaFacebookF, FaShareAlt } from "react-icons/fa";
-import { footerLinks } from "./footer";
+import { footerLinks } from "./footerData";
 const Footer = () => {
   return (
     <footer className="relative bg-(--color-bg-secondary) border-t border-(--color-border) mt-24 z-50">

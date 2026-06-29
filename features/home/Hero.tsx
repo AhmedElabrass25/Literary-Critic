@@ -38,7 +38,7 @@ const Hero = () => {
     <motion.section
       initial="hidden"
       animate="visible"
-      className="py-24 lg:py-30"
+      className="container py-24 lg:py-30"
     >
       <motion.div
         variants={textVariants}

@@ -1,5 +1,4 @@
 "use client";
-
 import { Field, FieldGroup, FieldLabel } from "@/components/ui/field";
 import { Input } from "@/components/ui/input";
 import Link from "next/link";
@@ -7,7 +6,6 @@ import AmberButton from "@/components/ui/AmberButton";
 import { useState } from "react";
 import AuthTitle from "@/components/ui/AuthTitle";
 import AuthImage from "@/components/ui/AuthImage";
-
 export default function page() {
   const [showPassword, setShowPassword] = useState(false);
   const [showConfirmPassword, setShowConfirmPassword] = useState(false);
