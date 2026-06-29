@@ -3,6 +3,7 @@ import AcademicSection from "@/features/about/AcademicSection";
 import AuthorCard from "@/features/about/AuthorCard";
 import FAQSection from "@/features/about/FAQSection";
 import QuoteSection from "@/features/about/QuoteSection";
+import EditorChoiceArticles from "@/features/home/articles/EditorChoiceArticles";
 import React from "react";
 
 const page = () => {
@@ -21,6 +22,7 @@ const page = () => {
         </div>
       </div>
       <AcademicSection />
+      <EditorChoiceArticles />
     </section>
   );
 };

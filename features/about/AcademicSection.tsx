@@ -3,7 +3,7 @@ import { academicData } from "./academicData";
 
 export default function AcademicSection() {
   return (
-    <section className="py-24 bg-(--color-bg-secondary)">
+    <section className="py-24 bg-(--color-bg-secondary) mb-16">
       <div className="container">
         <h2 className="mb-14 text-center text-5xl font-bold">
           المسيرة الأكاديمية
