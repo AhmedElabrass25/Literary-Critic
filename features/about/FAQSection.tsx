@@ -3,7 +3,7 @@ import QuestionCard from "./QuestionCard";
 
 function FAQSection() {
   return (
-    <section>
+    <section className="mb-24">
       <h2 className="mb-10 pb-4 text-3xl font-bold text-(--color-text-primary) border-b-2 border-(--color-border)">
         أسئلة شخصية
       </h2>

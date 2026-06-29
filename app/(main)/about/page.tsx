@@ -1,11 +1,14 @@
 import AboutContent from "@/features/about/AboutContent";
+import AcademicSection from "@/features/about/AcademicSection";
 import AuthorCard from "@/features/about/AuthorCard";
 import FAQSection from "@/features/about/FAQSection";
+import QuoteSection from "@/features/about/QuoteSection";
 import React from "react";
 
 const page = () => {
   return (
-    <section className="py-24">
+    <section className="">
+      <QuoteSection />
       <div className="container">
         <div className="grid gap-16 lg:grid-cols-[1fr_380px]">
           <main className="order-2 space-y-16 lg:order-1">
@@ -17,6 +20,7 @@ const page = () => {
           </aside>
         </div>
       </div>
+      <AcademicSection />
     </section>
   );
 };
