@@ -1,6 +1,7 @@
 import ArticleCard from "@/components/article-card/ArticleCard";
 import { articlesData } from "@/components/article-card/articledata";
 import React from "react";
+import Pagination from "./Pagination";
 
 const AllArticles = () => {
   return (
@@ -10,6 +11,7 @@ const AllArticles = () => {
           <ArticleCard key={article.id} article={article} />
         ))}
       </div>
+      <Pagination />
     </section>
   );
 };
