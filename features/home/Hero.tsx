@@ -81,7 +81,7 @@ const Hero = () => {
           className="w-full lg:w-1/2 relative flex justify-end"
         >
           <Image
-            src="/images/heroImage.svg"
+            src="/images/HeroImage.svg"
             alt="Book"
             width={700}
             height={600}
