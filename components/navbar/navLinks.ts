@@ -3,4 +3,5 @@ export const navLinks = [
   { name: "المقالات", href: "/articles" },
   { name: "اسألني", href: "/ask_me" },
   { name: "عن الناقد", href: "/about" },
+  { name: "مكتبتي", href: "/library" },
 ];
