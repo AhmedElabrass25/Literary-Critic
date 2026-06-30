@@ -5,6 +5,7 @@
 
 @theme {
   --font-sans: "Cairo", "Segoe UI", Tahoma, Arial, sans-serif;
+  --font-amiri: "Amiri", serif;
 }
 
 @custom-variant dark (&:is(.dark *));
