@@ -75,19 +75,6 @@ export default function BookReview() {
 
   return (
     <div className="container">
-      {/* Hero */}
-      <div className="grid grid-cols-1 lg:grid-cols-2 w-full max-w-[1200px] h-[384px] gap-[32px]">
-        <div className="absolute top-[55px] left-[616px] w-[536px] h-[274px] gap-4 opacity-100 row-start-1 col-start-2 row-span-1 col-span-1">
-          <div className="w-full max-w-[536px] h-[25px] pl-[409.17px] gap-[8.01px] flex">
-            <div className="w-full max-w-[71.23px] h-[25px] rounded-full px-[12px] py-[4px] bg-(--color-amber-light)">
-              <p className="text-[11px] leading-[16.5px] tracking-[0.55px] text-[#604100]">تحليل أدبي</p>
-            </div>
-            <p className="text-[11px] leading-[16.5px] text-[#49473F]">أكتوبر 2024</p>
-
-          </div>
-        </div>
-      </div>
-      {/* Book */}
       <div>
         <div className="w-full max-w-[225px] h-[56px] rounded-full p-[8px] flex justify-center items-center m-auto gap-[12px] bg-(--color-amber) mt-35 text-white">
           <button onClick={highlightSelection}>Highlight</button>
