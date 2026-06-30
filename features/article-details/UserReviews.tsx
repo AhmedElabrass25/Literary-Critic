@@ -25,6 +25,38 @@ export default function UserReviews() {
             </p>
           </div>
         </div>
+        <div className="w-full max-w-[852px] h-[158px] rounded-[14px] border p-[24px] gap-[12px] bg-white border-(--color-border)">
+          <div className="w-full max-w-[802px] h-[42px] flex justify-between">
+            <div className="flex gap-[12px] w-full">
+              <span className="w-full max-w-[40px] h-[40px] rounded-full bg-[#F1EDE8] font-bold text-[16px] leading-[24px] text-(--color-text-primary) text-center">
+                ع
+              </span>
+              <div className="w-full  h-[42px">
+                <p className="font-semibold text-[16px] leading-[24px] text-(--color-text-primary)">
+                  عبدالله الحربي
+                </p>
+                <p className="text-[12px] leading-[18px] text-(--color-text-muted)">
+                  منذ يومين
+                </p>
+              </div>
+              <div></div>
+            </div>
+            <div className="flex text-(--color-amber-light)">
+              <Star />
+              <Star />
+              <Star />
+              <Star />
+              <Star />
+            </div>
+          </div>
+          <div className="w-full max-w-[802px] h-[54px]">
+            <p className="text-[15px] leading-[27px] text-(color-text-primary)">
+              تحليل رائع ومميز، خاصة الجزء المتعلق برؤية تولستوي للفن كأداة لنقل
+              الشعور. تجربة القراءة من خلال المتصفح هنا فريدة جداً وتحاكي
+              الواقع.
+            </p>
+          </div>
+        </div>
       </div>
     </div>
   );
