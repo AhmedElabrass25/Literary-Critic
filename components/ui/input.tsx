@@ -17,5 +17,3 @@ function Input({ className, type, ...props }: React.ComponentProps<"input">) {
 }
 
 export { Input };
-
-// text-[16px] leading-none text-[#6B7280]
